@@ -1,18 +1,18 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 B1 Final Project  << Semester, Year >>
+# Frog run
+## CS110 B1 Final Project Fall, 2024
 
 ## Team Members
 
-<< List team member names >>
+Anna Lei
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+The player would be a frog and they would have to jump over obstacles but they would also have to collect lily pads and it would give them points. When the player reaches a certain amount of point, they win the game. If they hit an obstacle, it would be game over.
 
 ***    
 
@@ -30,11 +30,11 @@
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. moveable character
+2. obstacles
+3. points/rewards system
+4. moving background
+5. game over screen
 
 ### Classes
 
