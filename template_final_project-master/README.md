@@ -38,7 +38,9 @@ The player would be a frog and they would have to jump over obstacles but they w
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+- Frog: Creates a frog that can jump with the influence of gravity. It's a 2D frog that starts at the x, y position and when the frog jumps, the position will be updated based on gravity.
+- Obstacle: Creates the obstacles in the game which are spikes that can detect when the frog collides with the obstacle.
+- Points: Creates a lily pad that the frog can collect and give the player points and contribute to the score. This class handles the positioning, collision detection, and collection status of the lily pads.
 
 ## ATP
 
