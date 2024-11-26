@@ -43,9 +43,33 @@ The player would be a frog and they would have to jump over obstacles but they w
 - Points: Creates a lily pad that the frog can collect and give the player points and contribute to the score. This class handles the positioning, collision detection, and collection status of the lily pads.
 
 ## ATP
-
-| Step                 |Procedure             |Expected Results                   |
-|----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+Player movement
+Verify that the player can jump and the player will fall back to the ground due to gravity. 
+| Step                 |Procedure                    |Expected Results                                               |
+|----------------------|:---------------------------:|--------------------------------------------------------------:|
+|  1                   | Start the game              | Player's frog should jump up and fall back down to the ground |
+|  2                   | Press the space bar         |                                                               |
+|  3                   | Verify that the player jumps|                                                               |
+Collision Detection
+Verify that the obstacle and point objects work and when the player collides with it, it will either end the game or give them a point.
+| Step                 |Procedure                                 |Expected Results                                                       |
+|----------------------|:----------------------------------------:|----------------------------------------------------------------------:|
+|  1                   | Start the game                           | Player should collide with obstacle object and point object correctly.|
+|  2                   | Don't jump over a spike obstacle         | If player collides with an obstacle, game over screen should display. |
+|  3                   | Verify the player ran into the obstacle  | If player collides with a lily pad, player should earn a point.       |
+|  4                   | Jump into a lily pad (point object)      |                                                                       |
+|  5                   | Verify the player ran into the lily pad  |                                                                       |
+Game over screen
+Verify that the game over screen would display when player collides with an obstacle.
+| Step                 |Procedure                                  |Expected Results                                                       |
+|----------------------|:-----------------------------------------:|----------------------------------------------------------------------:|
+|  1                   | Start the game                            | Game over screen should display when player collides with an obstacle.|
+|  2                   | Play until player hits an obstacle.       | There should be a try again button to allow players to play again.    |
+|  3                   | Verify the "Game over" screen will display|                                                                       |
+Winner screen
+Verify that when player reaches 10 points, it will display a winner screen.
+| Step                 |Procedure                                  |Expected Results                                                       |
+|----------------------|:-----------------------------------------:|----------------------------------------------------------------------:|
+|  1                   | Start the game                            | Winner screen should display when player collects 10 points.          |
+|  2                   | Play until player collects 10 points.     |                                                                       |
+|  3                   | Verify the "Winner" screen will display   |                                                                       |
