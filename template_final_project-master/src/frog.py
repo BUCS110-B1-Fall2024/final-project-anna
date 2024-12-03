@@ -1,11 +1,13 @@
 class Frog:
-    def __init__(self, x = 0, y = 0, img_file = "frog.png", gravity = -9.8, jump_strength = 15):
+    def __init__(self, x = 0, y = 0, img_file = "frog.png", gravity = 0.8, jump_strength = -12, width = 40, height = 40):
         """Initialize the player object which is a frog and jump.
 
         args:
             x (int): the x position of where the frog position is
             y (int): the y position of where the frog position is
             img_file (str): The file for the frog's image
+            width (int): The width of the frog.
+            height (int): The height of the frog.
         """
         self.x = x
         self.y = y
@@ -15,6 +17,8 @@ class Frog:
         self.jump_strength = jump_strength
         self.on_ground = True
         self.velocity_y = 0
+        self.width = width
+        self.height = height
     def jump(self):
         """Makes the frog jump
         args: None
@@ -31,7 +35,7 @@ class Frog:
         if not self.on_ground:
             self.velocity_y += self.gravity
             self.y += self.velocity_y
-            if self.y <= self.ground_level:
+            if self.y >= self.ground_level:
                 self.y = self.ground_level
                 self.velocity_y = 0
                 self.on_ground = True
