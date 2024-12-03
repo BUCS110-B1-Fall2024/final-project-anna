@@ -14,8 +14,8 @@ class Points:
         self.width = width
         self.height = height
         self.img_file = img_file
-        self.collect = False
-    def collision(self, frog_x, frog_y, frog_width, frog_height):
+        self.collected = False
+    def check_collision(self, frog_x, frog_y, frog_width, frog_height):
         """Checks if the frog collided with the lily pads.
         args:
             frog_x (int): The x coordinate of the frog.
@@ -35,4 +35,4 @@ class Points:
         args: None
         return: None
         """
-        self.collect = True
+        self.collected = True
